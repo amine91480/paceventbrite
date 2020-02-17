@@ -1,5 +1,5 @@
 class UserMailer < ApplicationMailer
-  default from: 'no-reply@pacenventbrite.fr'
+  default from: 'no-reply.pacevent@yopmail.com'
  
   def welcome_email(user)
     @user = user 
