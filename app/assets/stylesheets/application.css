@@ -13,3 +13,6 @@
  *= require_tree .
  *= require_self
  */
+.mt-10rem{
+  margin-top: 10rem;
+}
