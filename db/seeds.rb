@@ -21,7 +21,7 @@ end
 puts 'Ok'
 
 print "Beginning Event Gen ..."
-until Event.count == 5
+until Event.count == 20
 #5.times do
   e = Event.create(start_date: Faker::Date.forward(days: 30).to_datetime, duration: rand(1..60)*5, title: Faker::TvShows::RickAndMorty.quote, description: Faker::Lorem.sentence(word_count: 10), price: rand(1..1000), location: Faker::Address.city, admin: User.all.sample)
 end
