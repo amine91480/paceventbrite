@@ -13,6 +13,6 @@ Ceci est notre début de clone d'EventBrite
 9. Enjoy
 ## Lien HEROKU
 [PACEventBrite](https://paceventbrite.herokuapp.com/)
-## Auteur
-[DevPomeis](https://github.com/DevPomeis) Théo Pomies sur Slack
+## Auteurs
+[DevPomeis](https://github.com/DevPomeis) Théo Pomies sur Slack  
 [SouleiAzz](https://github.com/SouleiAzz) Souleiman Azzouz sur Slack
