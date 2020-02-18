@@ -1,0 +1,15 @@
+<div class="container mt-10rem">
+<h1 class= 'text-center'> <%= @event.title %> </h1>
+    <div class="col-md-4"> 
+      <div class="card ml-5 mt-5" style="width: 50rem;">
+        <ul class="list-group list-group-flush" style='font-size: 15px;'>
+          <li class="list-group-item">Adresse email du créateur:  </li>
+          <li class="list-group-item">Nombre d'inscrits à l'événement: <%= @event.attendances.count %> </li>
+          <li class="list-group-item">Date de début de l'événement: <%= @event.start_date %> </li>
+          <li class="list-group-item">Le lieu de l'événement: <%= @event.location %> </li>
+          <li class="list-group-item">Prix de l'événement: <%= @event.price %> € </li>
+        </ul>
+      </div>
+      
+    </div>
+  </div>
