@@ -17,6 +17,10 @@ class Event < ApplicationRecord
     duration < 59 ? duration.to_s + " mins" : (duration/60).to_s + "h+"
   end
 
+  def end_date
+    start_date + duration
+  end
+
   private 
   
   def cant_be_past

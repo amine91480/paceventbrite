@@ -1,15 +1,25 @@
 <div class="container mt-10rem">
-<h1 class= 'text-center'> <%= @event.title %> </h1>
-    <div class="col-md-4"> 
-      <div class="card ml-5 mt-5" style="width: 50rem;">
-        <ul class="list-group list-group-flush" style='font-size: 15px;'>
-          <li class="list-group-item">Adresse email du créateur:  </li>
-          <li class="list-group-item">Nombre d'inscrits à l'événement: <%= @event.attendances.count %> </li>
-          <li class="list-group-item">Date de début de l'événement: <%= @event.start_date %> </li>
-          <li class="list-group-item">Le lieu de l'événement: <%= @event.location %> </li>
-          <li class="list-group-item">Prix de l'événement: <%= @event.price %> € </li>
-        </ul>
+  <h2 class="text-center">Page Evenement</h2>
+  <div class="card mt-5 text-center bg-light border-primary box-shadow" style="width: 100%;">
+    <h2 class="card-title mt-3 text-primary"><%= @event.title %></h2>
+    <div class="card-body">
+      <p class="card-text"><strong>Description</strong>:</p>
+      <p><%= @event.description %></p>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item"><strong>Inscrits</strong>: <%= @event.attendances.count %></li>
+      <li class="list-group-item"><strong>Début</strong>: <%= @event.start_date %> </li>
+      <li class="list-group-item"><strong>Fin</strong>: <%= @event.end_date %> </li>
+      <li class="list-group-item"><strong>Lieu</strong>: <%= @event.location %> </li>
+      <li class="list-group-item"><strong>Prix</strong>: <%= @event.price %> € </li>
+    </ul>
+    <div class="card-body row">
+      <div class="col-3 offset-3">
+        <strong>Organisateur</strong>: <%= link_to @event.admin.email, "mailto:"+@event.admin.email, class:"card-link" %>
       </div>
-      
+      <div class="col-3">
+        <%= link_to "S'inscrire", "#" , class:"btn btn-primary" %>
+      </div>
     </div>
   </div>
+</div>
