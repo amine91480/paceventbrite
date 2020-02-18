@@ -14,7 +14,7 @@
       <li class="list-group-item"><strong>Prix</strong>: <%= @event.price %> € </li>
     </ul>
     <div class="card-body row">
-      <div class="col-3 offset-3">
+      <div class="col-md-3 col-6 text-center offset-md-3">
         <strong>Organisateur</strong>: <%= link_to @event.admin.email, "mailto:"+@event.admin.email, class:"card-link" %>
       </div>
       <div class="col-3">
