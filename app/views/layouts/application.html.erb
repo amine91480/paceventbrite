@@ -40,7 +40,7 @@
                   Mon profil
                 </a>
                 <div class="dropdown-menu bg-primary" aria-labelledby="navbarDropdownMenuLink">
-                  <a class="dropdown-item text-white" href="#">Mon profil</a>
+                  <a class="dropdown-item text-white" href="<%= user_path(current_user.id) %>">Mon profil</a>
                   <%= link_to "Se deconnecter", destroy_user_session_path, method: :delete, class:"dropdown-item text-white"%>
                 </div>
               </li>
