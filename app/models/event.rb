@@ -13,6 +13,10 @@ class Event < ApplicationRecord
     (date.to_s + " " +time.to_s).to_datetime
   end
 
+  def duration_display
+    duration < 59 ? duration.to_s + " mins" : (duration/60).to_s + "h+"
+  end
+
   private 
   
   def cant_be_past

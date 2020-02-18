@@ -19,7 +19,7 @@
         <% if current_user.administrated_events.count == 0 %> 
           <strong>Vous n'avez pas encore crée d'évènement </strong>
         <% else %>
-          <strong>Vous avez crée : <%= current_user.administrated_events.count %> événement<%= current_user.administrated_events.count > 1 ? "s" : "" %></strong>
+          <strong>Vous avez crée <%= current_user.administrated_events.count %> événement<%= current_user.administrated_events.count > 1 ? "s" : "" %></strong>
           <p>Liste des évènements que vous organisez:</p>
           <div class="card border-primary  mt-3 mb-3">
             <ul class="list-group list-group-flush">
