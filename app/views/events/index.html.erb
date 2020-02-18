@@ -11,16 +11,18 @@
       <% @events.each do |e| %>
         <div class="col-md-4">
           <div class="card mb-4 box-shadow">
-            <div class="card-price">
-              <%= e.price %>
-            </div>
             <!-- <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&bg=55595c&fg=eceeef&text=Thumbnail" alt="Card image cap"> -->
-            <p class="card-header">"<%= e.title %>"</p>
+            <div class="card-header">
+              <p>"<%= e.title %>"</p>
+              <div class="card-price">
+                <%= e.price %>€
+              </div>
+            </div>
             <div class="card-body">
               <p class="card-text"><%= e.description %></p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
-                  <%= link_to "Voir", event_path(e.id), class:"btn btn-sm btn-outline-secondary" %>
+                  <%= link_to "Voir", event_path(e.id), class:"btn btn-sm btn-outline-primary" %>
                 </div>
                 <small class="text-muted"><%= e.start_date %></small>
               </div>
