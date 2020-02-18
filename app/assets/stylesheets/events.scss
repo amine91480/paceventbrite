@@ -65,11 +65,11 @@
 
 .field_with_errors {
   input, textarea{
-    border: 2px solid #FF7851;
+    border: 2px solid var(--danger);
   }
 }
 
 #form-new{
-  box-shadow: 0 0 0.6rem var(--teal);
+  box-shadow: 0 0 0.6rem var(--primary);
   border-radius: 1rem;
 }

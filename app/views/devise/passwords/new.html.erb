@@ -1,7 +1,7 @@
 <div class="container mt-10rem">
   <div class="row">
     <div class="col-md-6 offset-md-3">
-      <h2 class="text-center">Forgot your password?</h2>
+      <h2 class="text-center">Mot de passe oublié?</h2>
 
       <%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
         <%= render "devise/shared/error_messages", resource: resource %>
@@ -12,7 +12,7 @@
         </div>
 
         <div class="actions mt-5">
-          <%= f.submit "Send me reset password instructions", class:"btn btn-primary btn-block" %>
+          <%= f.submit "Envoyer mes instructions de réinitialisation par mail", class:"btn btn-primary btn-block" %>
         </div>
       <% end %>
 

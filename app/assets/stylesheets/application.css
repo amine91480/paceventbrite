@@ -16,3 +16,8 @@
 .mt-10rem{
   margin-top: 10rem;
 }
+
+.dropdown-item:hover{
+  background-color: var(--white);
+  color: var(--primary) !important;
+}
