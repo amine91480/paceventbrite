@@ -62,3 +62,9 @@
 .card:hover .card-header{
   color: #78C2AD;
 }
+
+.field_with_errors {
+  input, textarea{
+    border: 2px solid #FF7851;
+  }
+}
