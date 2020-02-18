@@ -16,7 +16,7 @@ Faker::UniqueGenerator.clear
 print "Beginning User Gen ..."
 until User.count == 10
   name = Faker::Name.unique.name
-  User.create(first_name: name.split.first, last_name: name.split.last , email: name.downcase.split.join + "@yopmail.com")
+  User.create(first_name: name.split.first, last_name: name.split.last , email: name.downcase.split.join + "@yopmail.com", password: "123456", password_confirmation: "123456")
 end
 puts 'Ok'
 
